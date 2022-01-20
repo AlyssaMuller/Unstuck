@@ -1,0 +1,18 @@
+*{
+	
+}
+
+body{
+	font-family:sans-serif;
+	text-align:center;
+	background-image:url('images/white.jpg');
+	background-size:cover;
+}
+h1{
+	color:black;
+	font-weight:bold;
+}
+#whiteBoi{
+	width:100%;
+	height:auto;
+}
