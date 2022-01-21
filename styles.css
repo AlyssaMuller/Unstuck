@@ -8,22 +8,39 @@
 	src: url(fonts/Honey\ Florist\ -\ Personal\ Use.otf);
 }
 
-html, body {
-	width:100%;
-	height:100%;
+* {
+	box-sizing: border-box;
 }
-	
-body {	
-	position: fixed;
-	background: #FFF url('images/white.jpg') no-repeat center center;
-	background-size: cover;
-	background-attachment: fixed;
 
+body {
 	font-family:sans-serif;
 	text-align:center;
 
-	padding:0%;
-	margin:0%;
+	padding: 0;
+	margin: 0;
+}
+
+#wrapper {
+	min-height: 90vh;
+
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+}
+
+#background-image {
+	grid-column: 1 / -1;
+	
+	background-image: url('images/white-background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+
+	height: 100%;
+}
+
+main {
+	grid-column: 2 / -2;
 }
 
 h1 {
@@ -42,32 +59,27 @@ h2 {
 	font-family: sans-serif;
 }
 
-.leaves{
+.leaves {
 	color:#d0d9d4;
 	font-size:2em;
 	margin:0;
 	display:inline-block;
-	font-family: honeyFlorist;
+	font-family: 'honeyFlorist';
 	white-space: nowrap;
 }
 
 #lLeaf {
 	padding-left:70px;
 }
-#whiteBoi {
-	width:100%;
-	height:auto;
-}
 
-.whiteBox {
+#blackBoxHeader {
 	background-color: rgba(25,25,23,.9);
 	padding: .7em 10px 10px 10px;
-	height:15%;
 	color:black;
 }
 
 #form-div > input {
-	margin-top:23%;
+	margin-top: 2rem;
 	height:3em;
 	width:60%;
 	box-shadow: 2px 2px #191917;
@@ -82,18 +94,27 @@ h2 {
 
 #myList {
 	list-style-type:none;
-	height:30%;
 }
 
 li {
 	background-color: rgba(25,25,23,.9);
-	/* color:#d0d9d4; */
 	color: rgb(190, 202, 139);
 	padding:5px 0px 5px 0px;
+	margin-top: 5px;
 	font-size:2em;
 }
 
 #line {
 	background-color:#beca8b;
 	height:5px;
+}
+
+footer {
+	color: #beca8b;
+	background-color:#191917;
+    padding: .25rem;
+    font-size: 1rem;
+	font-family: sans-serif;
+    font-style: italic;
+    text-align: center;
 }

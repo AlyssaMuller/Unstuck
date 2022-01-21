@@ -2,34 +2,44 @@
 <html>
 	<head>
 		<title>DJs Therapy</title>
+		<meta charset="utf-8">
 		<link rel='stylesheet' href='styles.css'>
 	</head>
 
-	<body class="background">
-		<div class="whiteBox">
-			<h1 id="title">DJ's Therapy Corner</h1>
-			<span class="leaves" id="lLeaf">(</span>
-			<h2 id="tagline">After test cry sessions only 25&cent;</h2>
-			<p class="leaves">)</p>
+	<body>
+		<div id="background-image">
+			<div id="wrapper">
+
+				<main>
+					<div id="blackBoxHeader">
+						<h1 id="title">DJ's Therapy Corner</h1>
+						<span class="leaves" id="lLeaf">(</span>
+						<h2 id="tagline">After test cry sessions only 25&cent;</h2>
+						<p class="leaves">)</p>
+					</div>
+				
+					<div id="line"></div>
+
+					<div id="form-div">
+						<input id="inputBox" type="text" placeholder="Type your question here"></input> 
+						<button id="myButton">Ask</button>
+					</div>		
+
+					<ul id="myList">
+						<!-- li elements get inserted here. -->
+					</ul>
+			</div>
+
+			<footer>
+				Copyright © 2022 Alyssa Muller<br>
+			</footer>
+
+					<script src="app.js"></script>
+				</main>
+
+			
+			
 		</div>
-		
-		<div id="line"></div>
-
-		<!-- <form method="post" target="_self">
-			<label></label>
-			<input id="inputBox" type="text" placeholder="Type your question here"></input> 
-			<button id="myButton">Ask</button>
-		</form> -->
-
-		<div id="form-div">
-			<input id="inputBox" type="text" placeholder="Type your question here"></input> 
-			<button id="myButton">Ask</button>
-		</div>		
-
-		<ul id="myList">
-			<!-- li elements get inserted here. -->
-		</ul>
-		<script src="app.js"></script>
 	</body>
 
 </html>
