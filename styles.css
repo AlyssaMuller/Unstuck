@@ -1,18 +1,99 @@
-*{
-	
+@font-face {
+	font-family: creamCake;
+	src: url(fonts/Cream\ Cake.otf);
 }
 
-body{
+@font-face {
+	font-family: honeyFlorist;
+	src: url(fonts/Honey\ Florist\ -\ Personal\ Use.otf);
+}
+
+html, body {
+	width:100%;
+	height:100%;
+}
+	
+body {	
+	position: fixed;
+	background: #FFF url('images/white.jpg') no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+
 	font-family:sans-serif;
 	text-align:center;
-	background-image:url('images/white.jpg');
-	background-size:cover;
+
+	padding:0%;
+	margin:0%;
 }
-h1{
-	color:black;
-	font-weight:bold;
+
+h1 {
+	font-size: 4em;
+	font-family: 'creamCake', sans-serif;
+	margin: 1% 10% 0% 15%;
+	color:#d0d9d4;
+	font-weight:normal;
 }
-#whiteBoi{
+
+h2 {
+	display:inline-block;
+	color:#d0d9d4;
+	margin:.2em 0 .5em 0;
+	font-size: 1.25em;
+	font-family: sans-serif;
+}
+
+.leaves{
+	color:#d0d9d4;
+	font-size:2em;
+	margin:0;
+	display:inline-block;
+	font-family: honeyFlorist;
+	white-space: nowrap;
+}
+
+#lLeaf {
+	padding-left:70px;
+}
+#whiteBoi {
 	width:100%;
 	height:auto;
+}
+
+.whiteBox {
+	background-color: rgba(25,25,23,.9);
+	padding: .7em 10px 10px 10px;
+	height:15%;
+	color:black;
+}
+
+#form-div > input {
+	margin-top:23%;
+	height:3em;
+	width:60%;
+	box-shadow: 2px 2px #191917;
+}
+
+#myButton {
+	background-color:#beca8b;
+	height:3.5em;
+	width:3.5em;
+	box-shadow:2px 2px #191917;
+}
+
+#myList {
+	list-style-type:none;
+	height:30%;
+}
+
+li {
+	background-color: rgba(25,25,23,.9);
+	/* color:#d0d9d4; */
+	color: rgb(190, 202, 139);
+	padding:5px 0px 5px 0px;
+	font-size:2em;
+}
+
+#line {
+	background-color:#beca8b;
+	height:5px;
 }

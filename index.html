@@ -3,20 +3,31 @@
 	<head>
 		<title>DJs Therapy</title>
 		<link rel='stylesheet' href='styles.css'>
-
 	</head>
-	<body>
-		<style background-image:url('images/white.jpg');></style>
-		<h1 id="title">Welcome to DJ's Therapy Corner</h1>
-		<h2 id="tagline">After test cry sessions only 25c</h2>
-		<form>
-		<label></label>
-		<input id="inputBox" type="text" placeholder="Type your question here"></input>
-		<button id=myButton>Ask</button>
-		</form>
+
+	<body class="background">
+		<div class="whiteBox">
+			<h1 id="title">DJ's Therapy Corner</h1>
+			<span class="leaves" id="lLeaf">(</span>
+			<h2 id="tagline">After test cry sessions only 25&cent;</h2>
+			<p class="leaves">)</p>
+		</div>
+		
+		<div id="line"></div>
+
+		<!-- <form method="post" target="_self">
+			<label></label>
+			<input id="inputBox" type="text" placeholder="Type your question here"></input> 
+			<button id="myButton">Ask</button>
+		</form> -->
+
+		<div id="form-div">
+			<input id="inputBox" type="text" placeholder="Type your question here"></input> 
+			<button id="myButton">Ask</button>
+		</div>		
 
 		<ul id="myList">
-			
+			<!-- li elements get inserted here. -->
 		</ul>
 		<script src="app.js"></script>
 	</body>
