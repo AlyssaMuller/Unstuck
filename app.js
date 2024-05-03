@@ -1,17 +1,17 @@
 
-// var myAnswersList=[
-//     {answer:"Boohoo, you&#39;re going to fail"},
-//     {answer:"...If you bring me one white sauce pizza I&#39;ll make sure to add a couple bonus points"},
-//     {answer:"Sounds like you could use a snickers!"},
-//     {answer:"You have nothing to worry about!"}];
-// console.log("myAnswers");
+var myAnswersList = [
+    { answer: "Boohoo, you&#39;re going to fail" },
+    { answer: "...If you bring me one white sauce pizza I&#39;ll make sure to add a couple bonus points" },
+    { answer: "Sounds like you could use a snickers!" },
+    { answer: "You have nothing to worry about!" }];
+console.log("myAnswers");
 
-var myAnswersList = []
+//var myAnswersList = []
 
-var h1=document.querySelector('h1');
+var h1 = document.querySelector('h1');
 console.log("h1 query:", h1);
 
-var h2=document.querySelector('h2');
+var h2 = document.querySelector('h2');
 
 var myButton = document.querySelector("#myButton");
 console.log("Button query: ", myButton);
@@ -19,7 +19,7 @@ console.log("Button query: ", myButton);
 var myList = document.querySelector("#myList");
 console.log("My list query: ", myList);
 
-myButton.onclick = (function() {
+myButton.onclick = (function () {
     if (Math.random() < 0.5) {
         h1.style.color = "white";
     } else {
@@ -43,12 +43,12 @@ function getRandomInt(min, max) {
 
 //load from JSONbin as JSON data
 function myAnswers() {
-	fetch("https://api.jsonbin.io/b/61e99761a785682f97198e37").then(function(response) {
-		response.json().then(function(data) {
-			// console.log("from the server: ", data);
-			myAnswersList = data;
-		});
-	});
+    fetch("https://api.jsonbin.io/b/61e99761a785682f97198e37/2").then(function (response) {
+        response.json().then(function (data) {
+            console.log("from the server: ", data);
+            myAnswersList = data;
+        });
+    });
 }
 
 //when the page loads, call function
